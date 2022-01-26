@@ -1,0 +1,3 @@
+<Cmd+D> Duplicate current selection
+<Shft+A> Auto layout
+<Up Down> Arrows to increase/decrease content sizes
