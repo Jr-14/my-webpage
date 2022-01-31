@@ -1,5 +1,5 @@
 // import './App.css';
-import background from "./jay-mantri-TFyi0QOx08c-unsplash.jpg";
+import background from "./jay-mantri-unsplash.jpg";
 
 function App() {
   return (
