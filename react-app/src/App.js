@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import background from "./jay-mantri-TFyi0QOx08c-unsplash.jpg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <LandingPage/>
+  );
+}
+
+const HelloWorld = () => {
+  return (
+    <>
+      <h1>Hello World</h1>
+    </>
+  );
+}
+
+const LandingPage = () => {
+  return (
+    <div style={{
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${background})`,
+      backgroundColor: 'rgba(0,0,0,0.1)',
+      backgroundSize: "cover",
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      width: '100vw',
+      height: '100vh',
+    }}>
+      <HelloWorld/>
     </div>
   );
 }
