@@ -18,8 +18,7 @@ const HelloWorld = () => {
 const LandingPage = () => {
   return (
     <div style={{
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${background})`,
-      backgroundColor: 'rgba(0,0,0,0.1)',
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(${background})`,
       backgroundSize: "cover",
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
