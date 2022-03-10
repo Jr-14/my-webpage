@@ -4,7 +4,7 @@ import './style.css';
 
 function App() {
   return (
-    <LandingPage/>
+    <LandingPage className="LandingPage"/>
   );
 }
 
@@ -19,7 +19,7 @@ const Headline = ({headline, subtitle}) => {
 
 const LandingPage = () => {
   const headline = "John Requizo";
-  const subtitle = "Independent developer with passion for learning new technologies"
+  const subtitle = "Independent developer";
   return (
     <div style={{
       backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(${background})`,
