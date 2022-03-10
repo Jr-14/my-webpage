@@ -13,3 +13,8 @@ From Google Fonts - [Montserrat](https://fonts.google.com/specimen/Montserrat)
 
 # Resources
 (Nature Forest - Copyright goes to Jay Mantri)[https://unsplash.com/photos/TFyi0QOx08c]
+
+
+## Side Project
+Trying out to recreate Conway's game of life using plain HTML, CSS, and JavaScript to be hosted on Github pages
+
