@@ -1,14 +1,19 @@
+import { GameWorld } from "./gameworld.js";
+
+
 main();
 
 
 function main() {
-    let canvas = document.getElementById("board");
-    var ctx = canvas.getContext("2d");
-    ctx.fillStyle = "#FF0000";
-    ctx.fillRect(0, 0, 150, 75);
+    let title = document.getElementById("title");
+    let gameWorld = new GameWorld(720, 480);
+    gameWorld.placeBoard(title);
+    let gameWorld2DContext = gameWorld.get2DContext();
+    gameWorld2DContext.fillStyle = "#FF0000";
+    gameWorld2DContext.fillRect(0, 0, 150, 75);
 
     // Log events
-    canvas.addEventListener("mousemove", (e) => {
+    gameWorld2DContext.addEventListener("mousemove", (e) => {
         logCanvasCoordinates(e);
     });
 }
