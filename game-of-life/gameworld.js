@@ -1,3 +1,5 @@
+import { Cell } from "./cell.mjs";
+
 class GameWorld {
 
     /** Creates a new game world and places a gameboard within it
@@ -13,9 +15,44 @@ class GameWorld {
             return element;
         };
 
-        this.context = createCanvasElement(height, width);
-        this.numberOfRows = this.context.height / 10;
-        this.numberOfColumns = this.context.width / 10;
+        this.canvas = createCanvasElement(height, width);
+        this.numberOfRows = this.canvas.height / 10;
+        this.numberOfColumns = this.canvas.width / 10;
+        this.gameObjects = [];
+
+        this.createGrid();
+        this.drawAllCells();
+    }
+
+
+    /** Get a Canvas 2D Context
+     * 
+     * @returns a Canvas2DContext
+     */
+    get2DContext() {
+        return this.canvas.getContext("2d");
+    }
+
+
+    /** Create a Grid of Cells
+     * 
+     */
+    createGrid() {
+        for (let y = 0; y < this.numberOfRows; y++) {
+            for (let x = 0; x < this.numberOfColumns; x++) {
+                this.gameObjects.push(new Cell(this.get2DContext(), x, y));
+            }
+        }
+    }
+
+
+    /** Draw all Cells into the gameboard
+     * 
+     */
+    drawAllCells() {
+        for (let i = 0; i < this.gameObjects.length; i++) {
+            this.gameObjects[i].draw();
+        }
     }
 
     /** Place the canvas after an element
