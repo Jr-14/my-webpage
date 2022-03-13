@@ -9,8 +9,6 @@ function main() {
     let gameWorld = new GameWorld(720, 480);
     gameWorld.placeBoard(title);
     let gameWorld2DContext = gameWorld.get2DContext();
-    gameWorld2DContext.fillStyle = "#FF0000";
-    gameWorld2DContext.fillRect(0, 0, 150, 75);
 
     // Log events
     gameWorld2DContext.addEventListener("mousemove", (e) => {

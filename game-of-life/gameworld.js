@@ -60,7 +60,7 @@ class GameWorld {
      * @param {element} node 
      */
     placeBoard(node) {
-        node.parentNode.insertBefore(this.context, node.nextSibling);
+        node.parentNode.insertBefore(this.canvas, node.nextSibling);
     }
 }
 
