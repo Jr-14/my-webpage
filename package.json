@@ -1,0 +1,20 @@
+{
+  "name": "my-webpage",
+  "version": "1.0.0",
+  "description": "My webpage using react frontend",
+  "main": "src/index.ts",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jr-14/my-webpage.git"
+  },
+  "author": "John Emerson Requizo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jr-14/my-webpage/issues"
+  },
+  "homepage": "https://github.com/Jr-14/my-webpage#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
